@@ -1,19 +1,8 @@
 #FROM tomcat:8.0.20-jre8
 # Dummy text to test 
 #COPY /var/lib/jenkins/workspace/Jenkins-Pipeline-Job/target/java-web-app-2.war /usr/local/tomcat/webapps/
-MAINTAINER Abhijit Kalita
-My OWN
-
-#FROM ubuntu
-#RUN apt-get update
-#RUN apt-get upgrade
-#RUN apt-get install tar -y
-#RUN apt-get -o http://apachemirror.wuchna.com/tomcat/tomcat-8/v8.5.50/bin/apache-tomcat-8.5.50.tar.gz
-#RUN tar -xvf apache-tomcat-8.5.50.tar.gz -y
-#RUN yum install tomcat -y
-#COPY ~/maven-web-application/target/*.war /usr/local/tomcat/webapps/
-#COPY /var/lib/jenkins/workspace/Jenkins-Pipeline-Job/target/java-web-app-2.war /usr/local/tomcat/webapps/
 FROM ubuntu:latest
+MAINTAINER Abhijit Kalita
 RUN apt-get -y update && apt-get -y upgrade \
     && apt-get -y install openjdk-8-jdk wget
 WORKDIR mkdir /opt/tomcat
