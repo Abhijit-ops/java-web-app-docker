@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: java-web-app
+  labels:
+     app: jwa
+spec:
+  containers:
+    - name: firstcontainer
+      image: dockerhandson/java-web-app
+      ports:
+        - containerPort : 8080
