@@ -13,7 +13,7 @@ RUN wget https://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.56/bin/apac
 RUN tar -vxf apache-tomcat-8.5.56.tar.gz
 #RUN cd /tmp && tar xvfz tomcat.tar.gz \
  #   && cp -Rv /tmp/apache-tomcat-8.5.50/* /opt/tomcat/
-COPY /target/maven-web-application.war /opt/tomcat/webapps/
+COPY /target/java-web-app-3.war /opt/tomcat/webapps/
 EXPOSE 8080
 CMD /usr/local/tomcat/bin/catalina.sh run
 #RUN docker login -u admin -p admin123 3.6.39.61:8084
