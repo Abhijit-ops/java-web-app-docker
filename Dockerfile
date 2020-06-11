@@ -7,7 +7,7 @@ COPY target/java-web-app-3.war /usr/local/tomcat/webapps/
 #FROM ubuntu:latest
 MAINTAINER Abhijit Kalita
 #RUN apt-get -y update && apt-get -y upgrade \
-    && apt-get -y install openjdk-8-jdk wget
+#    && apt-get -y install openjdk-8-jdk wget
 #WORKDIR mkdir /opt/tomcat
 #RUN wget https://mirrors.estointernet.in/apache/tomcat/tomcat-8/v8.5.56/bin/apache-tomcat-8.5.56.tar.gz
 #RUN tar -vxf apache-tomcat-8.5.56.tar.gz
