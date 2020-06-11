@@ -3,7 +3,7 @@ FROM tomcat:8.0.20-jre8
 COPY target/java-web-app-3.war /usr/local/tomcat/webapps/
 #Copy need to takethe file from the same folder 
 #COPY target/java-web-app*.war /usr/local/tomcat/webapps/java-web-app.war
-COPY /var/lib/jenkins/tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
+COPY **/tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
 #FROM ubuntu:latest
 MAINTAINER Abhijit Kalita
 #RUN apt-get -y update && apt-get -y upgrade \
